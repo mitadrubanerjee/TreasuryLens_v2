@@ -187,18 +187,16 @@ def analyze_with_gpt(snippets: List[str]) -> Tuple[List[str], str, Dict[str, int
     joined = "\n".join(f"- {s}" for s in snippets)
 
     prompt = f"""
+
 You are a highly experienced Forex trader with over 10 years of expertise in analyzing global currency markets. You’ve traded through rate hike cycles, QE tapers, geopolitical crises, and central bank pivots. Based on the input text (a set of recent news headlines and summaries), your job is to extract exactly FIVE high-impact market insights that are:
 
 1. Highly relevant to currency traders and institutional investors.
 2. Focused on macroeconomic developments, central bank signals, inflation trends, geopolitical risk, or surprise data points that could move FX markets.
 3. Written in a consistent, narrative progression — from macro themes to specific trade implications.
 4. Deeply analytical — avoid vague takeaways like “Fed to pause hikes” or “Euro may rise.” Each insight must include the **cause**, **effect**, and **market implication**.
-5. So the final response must answer the Why, Where, When and How of any such market event.
 
 Use a professional, precise, and insight-rich tone. Your goal is to provide **immediate trading value**.
 
-Remember, the consumer of this analysis will be an experienced foreign exchange trader at an Irish bank, so your response should be 
-well informed and rich in context. So, that the users consuming this information should get a clear and precise information. 
 
 Each takeaway should follow this structure:
 - **Headline-style summary** (bold)
