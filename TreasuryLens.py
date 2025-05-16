@@ -275,6 +275,7 @@ Here are the latest forex headlines:
                 {"role": "user", "content": prompt}
             ],
             temperature=0.0,
+            max_tokens=1200,
         )
         text = resp.choices[0].message.content
         result = json.loads(text)
