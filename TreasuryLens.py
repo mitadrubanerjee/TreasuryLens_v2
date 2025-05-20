@@ -487,7 +487,7 @@ def main():
 
     st.markdown("---")
 
-    pair = st.selectbox("Select Currency Pair to Analyze:", ["EUR/USD", "EUR/GBP", "USD/GBP", "EUR/JPY", "EUR/AUD", "EUR/CAD", "EUR/INR", "USD/CNH", "EUR/CHF", "EUR/NOK", "USD/BRL", "USD/ZAR", "USD/MXN", "USD/IDR"])
+    pair = st.selectbox("Select Currency Pair to Analyze:", ["EUR/USD", "EUR/GBP", "USD/GBP", "EUR/JPY", "EUR/AUD", "EUR/CAD", "EUR/INR", "USD/CNH", "EUR/CHF", "EUR/NOK", "USD/NZD", "USD/PLN", "USD/BRL", "USD/SEK", "USD/ZAR", "USD/MXN", "USD/IDR"])
     if st.button("Analyze This Pair"):
         with st.spinner(f"Analyzing sentiment for {pair}..."):
             try:
